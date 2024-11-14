@@ -1,0 +1,80 @@
+:root {
+ --cyan: #00FFFF;
+ --blue: #1E90FF;
+ --background-color:#36454F; 
+ --yellow: #FFFF00;
+ --white: #FFFFFF;
+
+}
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height:100dvh;
+}
+
+#primary-heading {
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  padding: 0.625rem 1rem 0.625rem;
+  border: 1px solid;
+  border-radius: 0.3rem;
+  background-color: inherit;
+  color: var(--blue);
+}
+
+.buttons:hover {
+  cursor: pointer;
+  box-shadow: 0 0 1rem var(--blue);
+}
+
+.new-array {
+  color: var(--cyan);
+  background-color: inherit;
+  margin-right: 2rem;
+}
+
+.new-array:hover {
+  color: var(--cyan);
+  box-shadow: 0 0 1rem var(--cyan);
+}
+
+.primary-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.sorting-buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+#bars-container {
+  display: flex; 
+  justify-content: center; 
+  align-items: flex-end; 
+  height: 550px;
+  margin-top: 1.25rem; 
+}
+
+.bar {
+  background-color: var(--yellow);
+  transition: height 0.3s ease;
+}
